@@ -7,7 +7,8 @@ RUN apt install -y \
 	zip \
 	socat \
 	net-tools \
-	default-jdk
+	default-jdk \
+  --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root
 
